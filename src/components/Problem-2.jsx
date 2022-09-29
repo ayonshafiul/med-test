@@ -15,7 +15,6 @@ const customStyles = {
 Modal.setAppElement("#root");
 const Problem2 = () => {
   const location = useLocation();
-  console.log(location);
   let timeOutID;
   const contactListRef = useRef(null);
   const [modal, setModal] = useState(() => {
