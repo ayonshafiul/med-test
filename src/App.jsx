@@ -11,7 +11,10 @@ function App() {
         <Route path="/" element={<Index />} />
         <Route path="/" element={<Menu />}>
           <Route path="problem-1" element={<Problem1 />} />
-          <Route path="problem-2" element={<Problem2 />} />
+          <Route path="problem-2" element={<Problem2 />}>
+            <Route path="all-contacts" element={<Problem2 />} />
+            <Route path="us-contacts" element={<Problem2 />} />
+          </Route>
         </Route>
       </Routes>
     </>
